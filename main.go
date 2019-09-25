@@ -95,7 +95,7 @@ func main() {
 		// read file slxs 
     for _, sheet := range xlFile.Sheets {
 			for indexRow, row := range sheet.Rows {
-					if indexRow >=10 {
+					if indexRow >=9 {
 						var TimeSheetRow = TimeSheet{}
 						value, _ := row.Cells[1].FormattedValue()
 						TimeSheetRow.Date = value
